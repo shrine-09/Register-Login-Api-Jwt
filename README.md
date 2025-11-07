@@ -12,6 +12,7 @@ This project is designed as a **template/base** for other projects.
 ----------------------------------------------------------------------------
 
 ## Folder Structure
+```
 RegisterLoginJwt/             <– main project folder
 ├─ Controllers/               <– AuthController, etc.
 ├─ Data/                      <– ApplicationDbContext
@@ -25,6 +26,7 @@ RegisterLoginJwt/             <– main project folder
 .gitignore
 README.md
 RegisterLoginJwt.sln          <– solution file
+```
 
 ----------------------------------------------------------------------------
 
@@ -47,15 +49,18 @@ RegisterLoginJwt.sln          <– solution file
   - git clone https://github.com/shrine-09/RegisterLoginJwt.git
   - cd RegisterLoginJwt
 
+
 **2.	Open the solution**
 
 Open "_RegisterLoginJwt.sln_" in your IDE.
+
 
 **3.	Install dependencies**
 
 Dependencies are restored automatically on build. To restore manually:
 ```bash```
   - dotnet restore
+
 
 **4.	Configure JWT**
 
@@ -76,9 +81,11 @@ Run the project via IDE or CLI:
 ```bash```
   - dotnet run --project RegisterLoginJwt/RegisterLoginJwt.csproj
 
+
 Swagger UI will be available at:
 ```bash```
   - https://localhost:7001/swagger/index.html
+
 
 Use Swagger to test endpoints:
   - POST /api/Auth/register → Register a new user
