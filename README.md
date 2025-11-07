@@ -105,8 +105,8 @@ Use Swagger to test endpoints:
 ----------------------------------------------------------------------------
 
 **Notes**
-	•	This is a base template — you can modify roles, JWT expiry, or claims as needed.
-	•	Never commit sensitive keys to public repositories; use environment variables or secrets for production.
+ - This is a base template — you can modify roles, JWT expiry, or claims as needed.
+ - Never commit sensitive keys to public repositories; use environment variables or secrets for production.
 
 ----------------------------------------------------------------------------
 
