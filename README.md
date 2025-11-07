@@ -39,25 +39,27 @@ RegisterLoginJwt.sln          <– solution file
 ----------------------------------------------------------------------------
 
 ### Setup
-**
-1. Clone the repository**
+
+**1. Clone the repository**
 
 (In terminal, inside the path to you project):
+```bash```
   - git clone https://github.com/shrine-09/RegisterLoginJwt.git
   - cd RegisterLoginJwt
 
 **2.	Open the solution**
 
-Open RegisterLoginJwt.sln in your IDE.
+Open "_RegisterLoginJwt.sln_" in your IDE.
 
 **3.	Install dependencies**
 
 Dependencies are restored automatically on build. To restore manually:
+```bash```
   - dotnet restore
 
 **4.	Configure JWT**
 
-Update _appsettings.json_:
+Update "_appsettings.json_":
 
   | "Jwt": {
   |   "Issuer": "https://localhost:5001",
@@ -75,22 +77,23 @@ Run the project via IDE or CLI:
   - dotnet run --project RegisterLoginJwt/RegisterLoginJwt.csproj
 
 Swagger UI will be available at:
+```bash```
   - https://localhost:7001/swagger/index.html
 
 Use Swagger to test endpoints:
-	•	POST /api/Auth/register → Register a new user
-	•	POST /api/Auth/login → Login and get JWT token
-	•	GET /api/Auth/admin-only → Protected endpoint, requires Admin role
-  • DELETE /api/dev/delete-admin → Use to delete the test admin, requires the test admin email
+  - POST /api/Auth/register → Register a new user
+  - POST /api/Auth/login → Login and get JWT token
+  - GET /api/Auth/admin-only → Protected endpoint, requires Admin role
+  - DELETE /api/dev/delete-admin → Use to delete the test admin, requires the test admin email
 
 ----------------------------------------------------------------------------
 
 **Reuse in Other Projects**
-	1.	Clone this repo in your new project folder.
-	2.	Open the solution (RegisterLoginJwt.sln) or reference the RegisterLoginJwt project.
-	3.	Configure your new project to use ApplicationDbContext and AuthController.
-	4.	Update JWT settings in your new project.
-	5.	Run migrations to initialize the database.
+ 1.	Clone this repo in your new project folder.
+ 2.	Open the solution (RegisterLoginJwt.sln) or reference the RegisterLoginJwt project.
+ 3.	Configure your new project to use ApplicationDbContext and AuthController.
+ 4.	Update JWT settings in your new project.
+ 5.	Run migrations to initialize the database.
 
 ----------------------------------------------------------------------------
 
