@@ -65,12 +65,12 @@ Dependencies are restored automatically on build. To restore manually:
 **4.	Configure JWT**
 
 Update "_appsettings.json_":
-
+```
   | "Jwt": {
   |   "Issuer": "https://localhost:5001",
   |   "Key": "supersecretkey_supersecretkey1234"
   | }
-
+```
 Make sure to use a strong key in production.
 
 ----------------------------------------------------------------------------
@@ -83,7 +83,6 @@ Run the project via IDE or CLI:
 
 
 Swagger UI will be available at:
-```bash```
   - https://localhost:7001/swagger/index.html
 
 
