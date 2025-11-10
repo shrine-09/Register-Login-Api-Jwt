@@ -17,7 +17,7 @@ RegisterLoginJwt/             <– main project folder
 ├─ Controllers/               <– AuthController, DevController, etc.
 ├─ Data/                      <– ApplicationDbContext
 ├─ Migrations/                <– EF Core migrations
-├─ Models/                    <– User.cs
+├─ Models/                    <– ApplicationUser.cs
 ├─ Properties/                <- launchSettings.json
 ├─ Program.cs 
 ├─ RegisterLoginJwt.csproj
