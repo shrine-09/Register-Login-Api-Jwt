@@ -1,31 +1,27 @@
-# Build results
+# Build outputs
 bin/
 obj/
 
-# Rider / VSCode / Visual Studio
+# IDE and editor settings
 .idea/
+.vs/
 .vscode/
-*.suo
+
+# SQLite database
+*.db
+*.db-shm
+*.db-wal
+
+# User-specific files
 *.user
+*.suo
 *.userosscache
-*.sln.docstates
 
-# OS junk
-.DS_Store
-Thumbs.db
-
-# Logs
+# Logs and temporary files
 *.log
+logs/
+temp/
 
-# Secrets / environment
-.env
+# Secrets and environment configs
 appsettings.Development.json
 
-# Databases
-*.db
-*.sqlite
-*.sqlite3
-
-# Publish / backup
-publish/
-*.bak
